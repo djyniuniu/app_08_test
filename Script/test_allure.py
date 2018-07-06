@@ -2,7 +2,7 @@ import allure,pytest
 
 class Test_Allure(object):
     @allure.step(title='登录')
-    @pytest.allure.severity(pytest.allure.severity_level.CRITICAL)
+    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)
     def test_001(self):
         allure.attach('描述','输入用户名')
         allure.attach('描述', '输入密码')
