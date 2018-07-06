@@ -13,4 +13,5 @@ class Test_Allure(object):
     @pytest.allure.severity(pytest.allure.severity_level.TRIVIAL)
     def test_002(self):
         allure.attach('描述','点击注册')
+        allure.attach('注册','注册成功')
         assert 1
